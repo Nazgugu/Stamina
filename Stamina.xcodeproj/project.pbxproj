@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22492519C5BC000A90BD /* StaminaApp.swift */; };
+		C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F224B2519C5BC000A90BD /* LandingView.swift */; };
+		C44F224E2519C5BD000A90BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44F224D2519C5BD000A90BD /* Assets.xcassets */; };
+		C44F22512519C5BD000A90BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44F22502519C5BD000A90BD /* Preview Assets.xcassets */; };
+		C44F22592519C97F000A90BD /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22582519C97F000A90BD /* PrimaryButtonStyle.swift */; };
+		C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F225A2519CA01000A90BD /* Color+Extension.swift */; };
+		C44F225D2519CE3E000A90BD /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F225C2519CE3E000A90BD /* CreateView.swift */; };
+		C44F225F2519CE8E000A90BD /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F225E2519CE8E000A90BD /* DropdownView.swift */; };
+		C44F22612519D17C000A90BD /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22602519D17C000A90BD /* RemindView.swift */; };
+		C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */; };
+		C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C44F22462519C5BC000A90BD /* Stamina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stamina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44F22492519C5BC000A90BD /* StaminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaApp.swift; sourceTree = "<group>"; };
+		C44F224B2519C5BC000A90BD /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		C44F224D2519C5BD000A90BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C44F22502519C5BD000A90BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C44F22522519C5BD000A90BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44F22582519C97F000A90BD /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		C44F225A2519CA01000A90BD /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		C44F225C2519CE3E000A90BD /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		C44F225E2519CE8E000A90BD /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		C44F22602519D17C000A90BD /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
+		C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
+		C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownItemProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C44F22432519C5BC000A90BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C44F223D2519C5BC000A90BD = {
+			isa = PBXGroup;
+			children = (
+				C44F22482519C5BC000A90BD /* Stamina */,
+				C44F22472519C5BC000A90BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C44F22472519C5BC000A90BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C44F22462519C5BC000A90BD /* Stamina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C44F22482519C5BC000A90BD /* Stamina */ = {
+			isa = PBXGroup;
+			children = (
+				C44F22622519D2ED000A90BD /* ViewModels */,
+				C44F22492519C5BC000A90BD /* StaminaApp.swift */,
+				C44F224B2519C5BC000A90BD /* LandingView.swift */,
+				C44F224D2519C5BD000A90BD /* Assets.xcassets */,
+				C44F22522519C5BD000A90BD /* Info.plist */,
+				C44F224F2519C5BD000A90BD /* Preview Content */,
+				C44F22582519C97F000A90BD /* PrimaryButtonStyle.swift */,
+				C44F225A2519CA01000A90BD /* Color+Extension.swift */,
+				C44F225C2519CE3E000A90BD /* CreateView.swift */,
+				C44F225E2519CE8E000A90BD /* DropdownView.swift */,
+				C44F22602519D17C000A90BD /* RemindView.swift */,
+			);
+			path = Stamina;
+			sourceTree = "<group>";
+		};
+		C44F224F2519C5BD000A90BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C44F22502519C5BD000A90BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C44F22622519D2ED000A90BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */,
+				C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C44F22452519C5BC000A90BD /* Stamina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C44F22552519C5BD000A90BD /* Build configuration list for PBXNativeTarget "Stamina" */;
+			buildPhases = (
+				C44F22422519C5BC000A90BD /* Sources */,
+				C44F22432519C5BC000A90BD /* Frameworks */,
+				C44F22442519C5BC000A90BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stamina;
+			productName = Stamina;
+			productReference = C44F22462519C5BC000A90BD /* Stamina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C44F223E2519C5BC000A90BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C44F22452519C5BC000A90BD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = C44F22412519C5BC000A90BD /* Build configuration list for PBXProject "Stamina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C44F223D2519C5BC000A90BD;
+			productRefGroup = C44F22472519C5BC000A90BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C44F22452519C5BC000A90BD /* Stamina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C44F22442519C5BC000A90BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44F22512519C5BD000A90BD /* Preview Assets.xcassets in Resources */,
+				C44F224E2519C5BD000A90BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C44F22422519C5BC000A90BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44F22592519C97F000A90BD /* PrimaryButtonStyle.swift in Sources */,
+				C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */,
+				C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */,
+				C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */,
+				C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */,
+				C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */,
+				C44F22612519D17C000A90BD /* RemindView.swift in Sources */,
+				C44F225D2519CE3E000A90BD /* CreateView.swift in Sources */,
+				C44F225F2519CE8E000A90BD /* DropdownView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C44F22532519C5BD000A90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C44F22542519C5BD000A90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C44F22562519C5BD000A90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Stamina/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Stamina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zheliu.apple.Stamina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C44F22572519C5BD000A90BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Stamina/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Stamina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zheliu.apple.Stamina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C44F22412519C5BC000A90BD /* Build configuration list for PBXProject "Stamina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44F22532519C5BD000A90BD /* Debug */,
+				C44F22542519C5BD000A90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C44F22552519C5BD000A90BD /* Build configuration list for PBXNativeTarget "Stamina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C44F22562519C5BD000A90BD /* Debug */,
+				C44F22572519C5BD000A90BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C44F223E2519C5BC000A90BD /* Project object */;
+}
