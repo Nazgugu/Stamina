@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72680ABA57F9D855107E419C /* Pods_Stamina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE08F9BBFD5CB5B8A1A5D364 /* Pods_Stamina.framework */; };
 		C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22492519C5BC000A90BD /* StaminaApp.swift */; };
 		C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F224B2519C5BC000A90BD /* LandingView.swift */; };
 		C44F224E2519C5BD000A90BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44F224D2519C5BD000A90BD /* Assets.xcassets */; };
@@ -18,9 +19,16 @@
 		C44F22612519D17C000A90BD /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22602519D17C000A90BD /* RemindView.swift */; };
 		C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */; };
 		C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */; };
+		C44F2268251A6316000A90BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44F2267251A6316000A90BD /* GoogleService-Info.plist */; };
+		C44F226B251A6A54000A90BD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226A251A6A54000A90BD /* UserService.swift */; };
+		C44F226E251A7690000A90BD /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226D251A7690000A90BD /* Challenge.swift */; };
+		C44F2270251A76FF000A90BD /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226F251A76FF000A90BD /* ChallengeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA8446405759119A6765F97 /* Pods-Stamina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stamina.debug.xcconfig"; path = "Target Support Files/Pods-Stamina/Pods-Stamina.debug.xcconfig"; sourceTree = "<group>"; };
+		64E592A17945F76ED8879CAB /* Pods-Stamina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stamina.release.xcconfig"; path = "Target Support Files/Pods-Stamina/Pods-Stamina.release.xcconfig"; sourceTree = "<group>"; };
+		AE08F9BBFD5CB5B8A1A5D364 /* Pods_Stamina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stamina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44F22462519C5BC000A90BD /* Stamina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stamina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44F22492519C5BC000A90BD /* StaminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaApp.swift; sourceTree = "<group>"; };
 		C44F224B2519C5BC000A90BD /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -34,6 +42,10 @@
 		C44F22602519D17C000A90BD /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownItemProtocol.swift; sourceTree = "<group>"; };
+		C44F2267251A6316000A90BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C44F226A251A6A54000A90BD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		C44F226D251A7690000A90BD /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		C44F226F251A76FF000A90BD /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72680ABA57F9D855107E419C /* Pods_Stamina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1330306E7CC919B61ADF082A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE08F9BBFD5CB5B8A1A5D364 /* Pods_Stamina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B17B70C9947272F2761A2A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA8446405759119A6765F97 /* Pods-Stamina.debug.xcconfig */,
+				64E592A17945F76ED8879CAB /* Pods-Stamina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C44F223D2519C5BC000A90BD = {
 			isa = PBXGroup;
 			children = (
 				C44F22482519C5BC000A90BD /* Stamina */,
 				C44F22472519C5BC000A90BD /* Products */,
+				4B17B70C9947272F2761A2A1 /* Pods */,
+				1330306E7CC919B61ADF082A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +98,9 @@
 		C44F22482519C5BC000A90BD /* Stamina */ = {
 			isa = PBXGroup;
 			children = (
+				C44F226C251A7685000A90BD /* Models */,
+				C44F2269251A6A49000A90BD /* Services */,
+				C44F2267251A6316000A90BD /* GoogleService-Info.plist */,
 				C44F22622519D2ED000A90BD /* ViewModels */,
 				C44F22492519C5BC000A90BD /* StaminaApp.swift */,
 				C44F224B2519C5BC000A90BD /* LandingView.swift */,
@@ -98,6 +133,23 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C44F2269251A6A49000A90BD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C44F226A251A6A54000A90BD /* UserService.swift */,
+				C44F226F251A76FF000A90BD /* ChallengeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C44F226C251A7685000A90BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C44F226D251A7690000A90BD /* Challenge.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C44F22552519C5BD000A90BD /* Build configuration list for PBXNativeTarget "Stamina" */;
 			buildPhases = (
+				993BA4893CF6E68A734493DA /* [CP] Check Pods Manifest.lock */,
 				C44F22422519C5BC000A90BD /* Sources */,
 				C44F22432519C5BC000A90BD /* Frameworks */,
 				C44F22442519C5BC000A90BD /* Resources */,
+				20B5D0595E194DBBF8F0EA3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,10 +211,53 @@
 			files = (
 				C44F22512519C5BD000A90BD /* Preview Assets.xcassets in Resources */,
 				C44F224E2519C5BD000A90BD /* Assets.xcassets in Resources */,
+				C44F2268251A6316000A90BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B5D0595E194DBBF8F0EA3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stamina/Pods-Stamina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stamina/Pods-Stamina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stamina/Pods-Stamina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		993BA4893CF6E68A734493DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stamina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C44F22422519C5BC000A90BD /* Sources */ = {
@@ -171,9 +268,12 @@
 				C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */,
 				C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */,
 				C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */,
+				C44F226E251A7690000A90BD /* Challenge.swift in Sources */,
 				C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */,
 				C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */,
+				C44F226B251A6A54000A90BD /* UserService.swift in Sources */,
 				C44F22612519D17C000A90BD /* RemindView.swift in Sources */,
+				C44F2270251A76FF000A90BD /* ChallengeService.swift in Sources */,
 				C44F225D2519CE3E000A90BD /* CreateView.swift in Sources */,
 				C44F225F2519CE8E000A90BD /* DropdownView.swift in Sources */,
 			);
@@ -300,6 +400,7 @@
 		};
 		C44F22562519C5BD000A90BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA8446405759119A6765F97 /* Pods-Stamina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +422,7 @@
 		};
 		C44F22572519C5BD000A90BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E592A17945F76ED8879CAB /* Pods-Stamina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

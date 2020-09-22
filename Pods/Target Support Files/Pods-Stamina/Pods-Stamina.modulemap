@@ -1,0 +1,6 @@
+framework module Pods_Stamina {
+  umbrella header "Pods-Stamina-umbrella.h"
+
+  export *
+  module * { export * }
+}
