@@ -23,6 +23,16 @@
 		C44F226B251A6A54000A90BD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226A251A6A54000A90BD /* UserService.swift */; };
 		C44F226E251A7690000A90BD /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226D251A7690000A90BD /* Challenge.swift */; };
 		C44F2270251A76FF000A90BD /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F226F251A76FF000A90BD /* ChallengeService.swift */; };
+		C44F2272251C4F67000A90BD /* IncrementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F2271251C4F67000A90BD /* IncrementError.swift */; };
+		C44F2275251D041C000A90BD /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F2274251D041C000A90BD /* AuthPublisher.swift */; };
+		C44F2277251D09E7000A90BD /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F2276251D09E7000A90BD /* TabContainerView.swift */; };
+		C44F2279251D0E73000A90BD /* ChallengeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F2278251D0E73000A90BD /* ChallengeListView.swift */; };
+		C44F227B251D0E83000A90BD /* ChallengeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F227A251D0E83000A90BD /* ChallengeListViewModel.swift */; };
+		C44F227D251D0F88000A90BD /* QuerySnapshotPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F227C251D0F88000A90BD /* QuerySnapshotPublisher.swift */; };
+		C44F2281251EC447000A90BD /* ChallengeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F2280251EC447000A90BD /* ChallengeItemViewModel.swift */; };
+		C4B1DD7A2523D0FA00D6E5AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */; };
+		C4B1DD7C2523D11200D6E5AC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */; };
+		C4B1DD7E2523D12000D6E5AC /* SettingsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +56,16 @@
 		C44F226A251A6A54000A90BD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		C44F226D251A7690000A90BD /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		C44F226F251A76FF000A90BD /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
+		C44F2271251C4F67000A90BD /* IncrementError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementError.swift; sourceTree = "<group>"; };
+		C44F2274251D041C000A90BD /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
+		C44F2276251D09E7000A90BD /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		C44F2278251D0E73000A90BD /* ChallengeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListView.swift; sourceTree = "<group>"; };
+		C44F227A251D0E83000A90BD /* ChallengeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeListViewModel.swift; sourceTree = "<group>"; };
+		C44F227C251D0F88000A90BD /* QuerySnapshotPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuerySnapshotPublisher.swift; sourceTree = "<group>"; };
+		C44F2280251EC447000A90BD /* ChallengeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItemViewModel.swift; sourceTree = "<group>"; };
+		C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,20 +118,19 @@
 		C44F22482519C5BC000A90BD /* Stamina */ = {
 			isa = PBXGroup;
 			children = (
+				C44F2284251EFA64000A90BD /* Errors */,
+				C44F2283251EFA46000A90BD /* Extensions */,
+				C44F2282251EFA31000A90BD /* Views */,
+				C44F2273251D040D000A90BD /* Publishers */,
 				C44F226C251A7685000A90BD /* Models */,
 				C44F2269251A6A49000A90BD /* Services */,
 				C44F2267251A6316000A90BD /* GoogleService-Info.plist */,
 				C44F22622519D2ED000A90BD /* ViewModels */,
 				C44F22492519C5BC000A90BD /* StaminaApp.swift */,
-				C44F224B2519C5BC000A90BD /* LandingView.swift */,
 				C44F224D2519C5BD000A90BD /* Assets.xcassets */,
 				C44F22522519C5BD000A90BD /* Info.plist */,
 				C44F224F2519C5BD000A90BD /* Preview Content */,
 				C44F22582519C97F000A90BD /* PrimaryButtonStyle.swift */,
-				C44F225A2519CA01000A90BD /* Color+Extension.swift */,
-				C44F225C2519CE3E000A90BD /* CreateView.swift */,
-				C44F225E2519CE8E000A90BD /* DropdownView.swift */,
-				C44F22602519D17C000A90BD /* RemindView.swift */,
 			);
 			path = Stamina;
 			sourceTree = "<group>";
@@ -129,6 +148,10 @@
 			children = (
 				C44F22632519D2FE000A90BD /* CreateChallengeViewModel.swift */,
 				C44F22652519D35D000A90BD /* DropdownItemProtocol.swift */,
+				C44F227A251D0E83000A90BD /* ChallengeListViewModel.swift */,
+				C44F2280251EC447000A90BD /* ChallengeItemViewModel.swift */,
+				C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */,
+				C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -148,6 +171,45 @@
 				C44F226D251A7690000A90BD /* Challenge.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C44F2273251D040D000A90BD /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				C44F2274251D041C000A90BD /* AuthPublisher.swift */,
+				C44F227C251D0F88000A90BD /* QuerySnapshotPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
+		C44F2282251EFA31000A90BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C44F225C2519CE3E000A90BD /* CreateView.swift */,
+				C44F225E2519CE8E000A90BD /* DropdownView.swift */,
+				C44F22602519D17C000A90BD /* RemindView.swift */,
+				C44F2276251D09E7000A90BD /* TabContainerView.swift */,
+				C44F2278251D0E73000A90BD /* ChallengeListView.swift */,
+				C44F224B2519C5BC000A90BD /* LandingView.swift */,
+				C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C44F2283251EFA46000A90BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C44F225A2519CA01000A90BD /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C44F2284251EFA64000A90BD /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C44F2271251C4F67000A90BD /* IncrementError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,18 +326,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44F2275251D041C000A90BD /* AuthPublisher.swift in Sources */,
 				C44F22592519C97F000A90BD /* PrimaryButtonStyle.swift in Sources */,
 				C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */,
 				C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */,
 				C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */,
+				C4B1DD7A2523D0FA00D6E5AC /* SettingsView.swift in Sources */,
+				C4B1DD7E2523D12000D6E5AC /* SettingsItemViewModel.swift in Sources */,
 				C44F226E251A7690000A90BD /* Challenge.swift in Sources */,
 				C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */,
 				C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */,
 				C44F226B251A6A54000A90BD /* UserService.swift in Sources */,
+				C44F2277251D09E7000A90BD /* TabContainerView.swift in Sources */,
+				C44F227B251D0E83000A90BD /* ChallengeListViewModel.swift in Sources */,
+				C44F227D251D0F88000A90BD /* QuerySnapshotPublisher.swift in Sources */,
 				C44F22612519D17C000A90BD /* RemindView.swift in Sources */,
 				C44F2270251A76FF000A90BD /* ChallengeService.swift in Sources */,
+				C44F2281251EC447000A90BD /* ChallengeItemViewModel.swift in Sources */,
+				C44F2279251D0E73000A90BD /* ChallengeListView.swift in Sources */,
 				C44F225D2519CE3E000A90BD /* CreateView.swift in Sources */,
 				C44F225F2519CE8E000A90BD /* DropdownView.swift in Sources */,
+				C44F2272251C4F67000A90BD /* IncrementError.swift in Sources */,
+				C4B1DD7C2523D11200D6E5AC /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

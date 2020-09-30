@@ -11,10 +11,14 @@ import Combine
 typealias UserId = String
 
 final class CreateChallengeViewModel: ObservableObject {
+    
     @Published var exerciseDropdown = ChallengePartViewModel(type: .exercise)
     @Published var startAmountDropdown = ChallengePartViewModel(type: .startAmount)
     @Published var increaseDropdown = ChallengePartViewModel(type: .increase)
     @Published var lengthDropdown = ChallengePartViewModel(type: .length)
+    
+    @Published var error: IncrementError?
+    @Published var isLoading: Bool = false
     
     private let userService: UserServiceProtocol
     private var cancellables: [AnyCancellable] = [AnyCancellable]()
@@ -32,13 +36,15 @@ final class CreateChallengeViewModel: ObservableObject {
     func send(action: Action) {
         switch action {
             case .createChallenge:
-                currentUserId().flatMap { userId -> AnyPublisher<Void, Error> in
+                isLoading = true
+                currentUserId().flatMap { userId -> AnyPublisher<Void, IncrementError> in
                     return self.createChallenge(userId: userId)
                 }
                 .sink { completion in
+                    self.isLoading = false
                     switch completion {
                         case let .failure(error):
-                            print(error.localizedDescription)
+                            self.error = error
                         case .finished:
                             print("finished")
                     }
@@ -49,11 +55,11 @@ final class CreateChallengeViewModel: ObservableObject {
         }
     }
     
-    private func createChallenge(userId: UserId) -> AnyPublisher<Void, Error> {
+    private func createChallenge(userId: UserId) -> AnyPublisher<Void, IncrementError> {
         guard let exercise = exerciseDropdown.text,
               let startAmount = startAmountDropdown.number,
               let increase = increaseDropdown.number,
-              let length = lengthDropdown.number else { return Fail(error: NSError()).eraseToAnyPublisher() }
+              let length = lengthDropdown.number else { return Fail(error: .default(description: "Parsing error")).eraseToAnyPublisher() }
         
         let challenge = Challenge(exercise: exercise,
                                   startAmount: startAmount,
@@ -65,13 +71,13 @@ final class CreateChallengeViewModel: ObservableObject {
         return challengeService.create(challenge).eraseToAnyPublisher()
     }
     
-    private func currentUserId() -> AnyPublisher<UserId, Error> {
+    private func currentUserId() -> AnyPublisher<UserId, IncrementError> {
         print("getting user Id")
-        return userService.currentUser().flatMap { user -> AnyPublisher<UserId, Error> in
+        return userService.currentUser().flatMap { user -> AnyPublisher<UserId, IncrementError> in
             if let userId = user?.uid {
                 print("user is logged in")
                 return Just(userId)
-                    .setFailureType(to: Error.self)
+                    .setFailureType(to: IncrementError.self)
                     .eraseToAnyPublisher()
             } else {
                 print("user is being logged in anonumously")
