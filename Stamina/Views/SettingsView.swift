@@ -21,6 +21,12 @@ struct SettingsView: View {
                 }
             }
         }
+        .background(
+            NavigationLink(
+                destination: LoginSignupView(viewModel: LoginSignupViewModel(mode: .signup, isPushed: $viewModel.loginSignupPushed)),
+                isActive: $viewModel.loginSignupPushed) {
+            }
+        )
         .navigationTitle(viewModel.title)
         .onAppear() {
             viewModel.onAppear()

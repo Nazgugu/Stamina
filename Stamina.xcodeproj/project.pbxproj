@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		72680ABA57F9D855107E419C /* Pods_Stamina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE08F9BBFD5CB5B8A1A5D364 /* Pods_Stamina.framework */; };
+		C40F7747252AD4F8005805A8 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F7746252AD4F8005805A8 /* LandingViewModel.swift */; };
+		C40F7749252AD682005805A8 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F7748252AD682005805A8 /* LoginSignupView.swift */; };
+		C40F774B252AD6B6005805A8 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F774A252AD6B6005805A8 /* LoginSignupViewModel.swift */; };
+		C40F774E252AD938005805A8 /* TextFieldCustomRoundedStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40F774D252AD938005805A8 /* TextFieldCustomRoundedStyle.swift */; };
 		C44F224A2519C5BC000A90BD /* StaminaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F22492519C5BC000A90BD /* StaminaApp.swift */; };
 		C44F224C2519C5BC000A90BD /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44F224B2519C5BC000A90BD /* LandingView.swift */; };
 		C44F224E2519C5BD000A90BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44F224D2519C5BD000A90BD /* Assets.xcassets */; };
@@ -33,12 +37,18 @@
 		C4B1DD7A2523D0FA00D6E5AC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */; };
 		C4B1DD7C2523D11200D6E5AC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */; };
 		C4B1DD7E2523D12000D6E5AC /* SettingsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */; };
+		C4E7BEEF253FB1080053FAB1 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */; };
+		C4E7BEF2253FB2210053FAB1 /* ProgressCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BEF1253FB2210053FAB1 /* ProgressCircleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BA8446405759119A6765F97 /* Pods-Stamina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stamina.debug.xcconfig"; path = "Target Support Files/Pods-Stamina/Pods-Stamina.debug.xcconfig"; sourceTree = "<group>"; };
 		64E592A17945F76ED8879CAB /* Pods-Stamina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stamina.release.xcconfig"; path = "Target Support Files/Pods-Stamina/Pods-Stamina.release.xcconfig"; sourceTree = "<group>"; };
 		AE08F9BBFD5CB5B8A1A5D364 /* Pods_Stamina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stamina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40F7746252AD4F8005805A8 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		C40F7748252AD682005805A8 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		C40F774A252AD6B6005805A8 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
+		C40F774D252AD938005805A8 /* TextFieldCustomRoundedStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomRoundedStyle.swift; sourceTree = "<group>"; };
 		C44F22462519C5BC000A90BD /* Stamina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stamina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44F22492519C5BC000A90BD /* StaminaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaminaApp.swift; sourceTree = "<group>"; };
 		C44F224B2519C5BC000A90BD /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 		C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemViewModel.swift; sourceTree = "<group>"; };
+		C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		C4E7BEF1253FB2210053FAB1 /* ProgressCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C40F774C252AD91D005805A8 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C40F774D252AD938005805A8 /* TextFieldCustomRoundedStyle.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		C44F223D2519C5BC000A90BD = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +138,7 @@
 		C44F22482519C5BC000A90BD /* Stamina */ = {
 			isa = PBXGroup;
 			children = (
+				C40F774C252AD91D005805A8 /* Modifiers */,
 				C44F2284251EFA64000A90BD /* Errors */,
 				C44F2283251EFA46000A90BD /* Extensions */,
 				C44F2282251EFA31000A90BD /* Views */,
@@ -152,6 +173,9 @@
 				C44F2280251EC447000A90BD /* ChallengeItemViewModel.swift */,
 				C4B1DD7B2523D11200D6E5AC /* SettingsViewModel.swift */,
 				C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */,
+				C40F7746252AD4F8005805A8 /* LandingViewModel.swift */,
+				C40F774A252AD6B6005805A8 /* LoginSignupViewModel.swift */,
+				C4E7BEF1253FB2210053FAB1 /* ProgressCircleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,6 +216,8 @@
 				C44F2278251D0E73000A90BD /* ChallengeListView.swift */,
 				C44F224B2519C5BC000A90BD /* LandingView.swift */,
 				C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */,
+				C40F7748252AD682005805A8 /* LoginSignupView.swift */,
+				C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,18 +359,24 @@
 				C44F22662519D35D000A90BD /* DropdownItemProtocol.swift in Sources */,
 				C4B1DD7A2523D0FA00D6E5AC /* SettingsView.swift in Sources */,
 				C4B1DD7E2523D12000D6E5AC /* SettingsItemViewModel.swift in Sources */,
+				C40F774B252AD6B6005805A8 /* LoginSignupViewModel.swift in Sources */,
 				C44F226E251A7690000A90BD /* Challenge.swift in Sources */,
 				C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */,
 				C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */,
 				C44F226B251A6A54000A90BD /* UserService.swift in Sources */,
 				C44F2277251D09E7000A90BD /* TabContainerView.swift in Sources */,
+				C40F7747252AD4F8005805A8 /* LandingViewModel.swift in Sources */,
 				C44F227B251D0E83000A90BD /* ChallengeListViewModel.swift in Sources */,
 				C44F227D251D0F88000A90BD /* QuerySnapshotPublisher.swift in Sources */,
 				C44F22612519D17C000A90BD /* RemindView.swift in Sources */,
 				C44F2270251A76FF000A90BD /* ChallengeService.swift in Sources */,
 				C44F2281251EC447000A90BD /* ChallengeItemViewModel.swift in Sources */,
+				C40F7749252AD682005805A8 /* LoginSignupView.swift in Sources */,
 				C44F2279251D0E73000A90BD /* ChallengeListView.swift in Sources */,
 				C44F225D2519CE3E000A90BD /* CreateView.swift in Sources */,
+				C4E7BEEF253FB1080053FAB1 /* ProgressCircleView.swift in Sources */,
+				C4E7BEF2253FB2210053FAB1 /* ProgressCircleViewModel.swift in Sources */,
+				C40F774E252AD938005805A8 /* TextFieldCustomRoundedStyle.swift in Sources */,
 				C44F225F2519CE8E000A90BD /* DropdownView.swift in Sources */,
 				C44F2272251C4F67000A90BD /* IncrementError.swift in Sources */,
 				C4B1DD7C2523D11200D6E5AC /* SettingsViewModel.swift in Sources */,
@@ -479,6 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Stamina/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = Stamina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
