@@ -39,6 +39,7 @@
 		C4B1DD7E2523D12000D6E5AC /* SettingsItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */; };
 		C4E7BEEF253FB1080053FAB1 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */; };
 		C4E7BEF2253FB2210053FAB1 /* ProgressCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BEF1253FB2210053FAB1 /* ProgressCircleViewModel.swift */; };
+		C4E7BEF5253FDC160053FAB1 /* ChallengeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BEF4253FDC160053FAB1 /* ChallengeItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		C4B1DD7D2523D12000D6E5AC /* SettingsItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemViewModel.swift; sourceTree = "<group>"; };
 		C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		C4E7BEF1253FB2210053FAB1 /* ProgressCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleViewModel.swift; sourceTree = "<group>"; };
+		C4E7BEF4253FDC160053FAB1 /* ChallengeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				C4B1DD792523D0FA00D6E5AC /* SettingsView.swift */,
 				C40F7748252AD682005805A8 /* LoginSignupView.swift */,
 				C4E7BEEE253FB1080053FAB1 /* ProgressCircleView.swift */,
+				C4E7BEF4253FDC160053FAB1 /* ChallengeItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				C40F774B252AD6B6005805A8 /* LoginSignupViewModel.swift in Sources */,
 				C44F226E251A7690000A90BD /* Challenge.swift in Sources */,
 				C44F225B2519CA01000A90BD /* Color+Extension.swift in Sources */,
+				C4E7BEF5253FDC160053FAB1 /* ChallengeItemView.swift in Sources */,
 				C44F22642519D2FE000A90BD /* CreateChallengeViewModel.swift in Sources */,
 				C44F226B251A6A54000A90BD /* UserService.swift in Sources */,
 				C44F2277251D09E7000A90BD /* TabContainerView.swift in Sources */,

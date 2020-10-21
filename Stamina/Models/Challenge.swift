@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct Challenge: Codable, Hashable {
+struct Challenge: Codable {
+    @DocumentID var id: String?
+    
     let exercise: String
     let startAmount: Int
     let increase: Int
