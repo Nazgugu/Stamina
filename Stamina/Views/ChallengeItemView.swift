@@ -34,6 +34,11 @@ struct ChallengeItemView: View {
         }
     }
     
+    var todayView: some View {
+        Divider()
+        
+    }
+    
     var body: some View {
         HStack {
             Spacer()
