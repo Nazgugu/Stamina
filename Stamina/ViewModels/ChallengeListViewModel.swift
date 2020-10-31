@@ -22,6 +22,7 @@ final class ChallengeListViewModel: ObservableObject {
     enum Action{
         case retry
         case create
+        case timeChange
     }
     
     init(userService: UserServiceProtocol = UserService(),
@@ -37,6 +38,9 @@ final class ChallengeListViewModel: ObservableObject {
             observeChallenges()
         case .create:
             showingCreateModel = true
+        case .timeChange:
+            cancellables.removeAll()
+            observeChallenges()
         }
     }
     
@@ -61,9 +65,15 @@ final class ChallengeListViewModel: ObservableObject {
                 self.error = nil
                 self.isLoading = false
                 self.showingCreateModel = false
-                self.itemViewModels = challenges.map { ChallengeItemViewModel($0) { [weak self] id in
-                    self?.deleteChallenge(id)
-                } }
+                self.itemViewModels = challenges.map { challenge in
+                    .init(challenge,
+                          onDelete: { [weak self] id in
+                            self?.deleteChallenge(id)
+                    },
+                          onToggleComplete: { [weak self] id, activities in
+                            self?.updateChallenge(id: id, activities: activities)
+                          })
+                }
             }.store(in: &cancellables)
     }
     
@@ -78,4 +88,15 @@ final class ChallengeListViewModel: ObservableObject {
         .store(in: &cancellables)
     }
     
+    private func updateChallenge(id: String, activities: [Activity]) {
+        //challengeService
+        challengeService.updateChallenge(id, activities: activities).sink { completion in
+            switch completion {
+            case let .failure(error):
+                print(error.localizedDescription)
+            case .finished: break
+            }
+        } receiveValue: { _ in }
+        .store(in: &cancellables)
+    }
 }
